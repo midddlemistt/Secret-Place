@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D36CB3C2BA32FEC00EC571F /* Secret_PlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB3B2BA32FEC00EC571F /* Secret_PlaceApp.swift */; };
+		9D36CB3E2BA32FEC00EC571F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB3D2BA32FEC00EC571F /* ContentView.swift */; };
+		9D36CB402BA32FEE00EC571F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D36CB3F2BA32FEE00EC571F /* Assets.xcassets */; };
+		9D36CB432BA32FEE00EC571F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D36CB422BA32FEE00EC571F /* Preview Assets.xcassets */; };
+		9D36CB4D2BA32FEF00EC571F /* Secret_PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB4C2BA32FEF00EC571F /* Secret_PlaceTests.swift */; };
+		9D36CB572BA32FEF00EC571F /* Secret_PlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB562BA32FEF00EC571F /* Secret_PlaceUITests.swift */; };
+		9D36CB592BA32FEF00EC571F /* Secret_PlaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB582BA32FEF00EC571F /* Secret_PlaceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D36CB492BA32FEF00EC571F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D36CB302BA32FEC00EC571F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D36CB372BA32FEC00EC571F;
+			remoteInfo = "Secret Place";
+		};
+		9D36CB532BA32FEF00EC571F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D36CB302BA32FEC00EC571F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D36CB372BA32FEC00EC571F;
+			remoteInfo = "Secret Place";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D36CB382BA32FEC00EC571F /* Secret Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D36CB3B2BA32FEC00EC571F /* Secret_PlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_PlaceApp.swift; sourceTree = "<group>"; };
+		9D36CB3D2BA32FEC00EC571F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D36CB3F2BA32FEE00EC571F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D36CB422BA32FEE00EC571F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D36CB482BA32FEF00EC571F /* Secret PlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secret PlaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D36CB4C2BA32FEF00EC571F /* Secret_PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_PlaceTests.swift; sourceTree = "<group>"; };
+		9D36CB522BA32FEF00EC571F /* Secret PlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secret PlaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D36CB562BA32FEF00EC571F /* Secret_PlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_PlaceUITests.swift; sourceTree = "<group>"; };
+		9D36CB582BA32FEF00EC571F /* Secret_PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret_PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D36CB352BA32FEC00EC571F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB452BA32FEF00EC571F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB4F2BA32FEF00EC571F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D36CB2F2BA32FEC00EC571F = {
+			isa = PBXGroup;
+			children = (
+				9D36CB3A2BA32FEC00EC571F /* Secret Place */,
+				9D36CB4B2BA32FEF00EC571F /* Secret PlaceTests */,
+				9D36CB552BA32FEF00EC571F /* Secret PlaceUITests */,
+				9D36CB392BA32FEC00EC571F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D36CB392BA32FEC00EC571F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CB382BA32FEC00EC571F /* Secret Place.app */,
+				9D36CB482BA32FEF00EC571F /* Secret PlaceTests.xctest */,
+				9D36CB522BA32FEF00EC571F /* Secret PlaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D36CB3A2BA32FEC00EC571F /* Secret Place */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CB3B2BA32FEC00EC571F /* Secret_PlaceApp.swift */,
+				9D36CB3D2BA32FEC00EC571F /* ContentView.swift */,
+				9D36CB3F2BA32FEE00EC571F /* Assets.xcassets */,
+				9D36CB412BA32FEE00EC571F /* Preview Content */,
+			);
+			path = "Secret Place";
+			sourceTree = "<group>";
+		};
+		9D36CB412BA32FEE00EC571F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CB422BA32FEE00EC571F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D36CB4B2BA32FEF00EC571F /* Secret PlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CB4C2BA32FEF00EC571F /* Secret_PlaceTests.swift */,
+			);
+			path = "Secret PlaceTests";
+			sourceTree = "<group>";
+		};
+		9D36CB552BA32FEF00EC571F /* Secret PlaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D36CB562BA32FEF00EC571F /* Secret_PlaceUITests.swift */,
+				9D36CB582BA32FEF00EC571F /* Secret_PlaceUITestsLaunchTests.swift */,
+			);
+			path = "Secret PlaceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D36CB372BA32FEC00EC571F /* Secret Place */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D36CB5C2BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret Place" */;
+			buildPhases = (
+				9D36CB342BA32FEC00EC571F /* Sources */,
+				9D36CB352BA32FEC00EC571F /* Frameworks */,
+				9D36CB362BA32FEC00EC571F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Secret Place";
+			productName = "Secret Place";
+			productReference = 9D36CB382BA32FEC00EC571F /* Secret Place.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D36CB472BA32FEF00EC571F /* Secret PlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D36CB5F2BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret PlaceTests" */;
+			buildPhases = (
+				9D36CB442BA32FEF00EC571F /* Sources */,
+				9D36CB452BA32FEF00EC571F /* Frameworks */,
+				9D36CB462BA32FEF00EC571F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D36CB4A2BA32FEF00EC571F /* PBXTargetDependency */,
+			);
+			name = "Secret PlaceTests";
+			productName = "Secret PlaceTests";
+			productReference = 9D36CB482BA32FEF00EC571F /* Secret PlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D36CB512BA32FEF00EC571F /* Secret PlaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D36CB622BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret PlaceUITests" */;
+			buildPhases = (
+				9D36CB4E2BA32FEF00EC571F /* Sources */,
+				9D36CB4F2BA32FEF00EC571F /* Frameworks */,
+				9D36CB502BA32FEF00EC571F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D36CB542BA32FEF00EC571F /* PBXTargetDependency */,
+			);
+			name = "Secret PlaceUITests";
+			productName = "Secret PlaceUITests";
+			productReference = 9D36CB522BA32FEF00EC571F /* Secret PlaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D36CB302BA32FEC00EC571F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9D36CB372BA32FEC00EC571F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9D36CB472BA32FEF00EC571F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9D36CB372BA32FEC00EC571F;
+					};
+					9D36CB512BA32FEF00EC571F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9D36CB372BA32FEC00EC571F;
+					};
+				};
+			};
+			buildConfigurationList = 9D36CB332BA32FEC00EC571F /* Build configuration list for PBXProject "Secret Place" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D36CB2F2BA32FEC00EC571F;
+			productRefGroup = 9D36CB392BA32FEC00EC571F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D36CB372BA32FEC00EC571F /* Secret Place */,
+				9D36CB472BA32FEF00EC571F /* Secret PlaceTests */,
+				9D36CB512BA32FEF00EC571F /* Secret PlaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D36CB362BA32FEC00EC571F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D36CB432BA32FEE00EC571F /* Preview Assets.xcassets in Resources */,
+				9D36CB402BA32FEE00EC571F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB462BA32FEF00EC571F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB502BA32FEF00EC571F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D36CB342BA32FEC00EC571F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D36CB3E2BA32FEC00EC571F /* ContentView.swift in Sources */,
+				9D36CB3C2BA32FEC00EC571F /* Secret_PlaceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB442BA32FEF00EC571F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D36CB4D2BA32FEF00EC571F /* Secret_PlaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D36CB4E2BA32FEF00EC571F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D36CB592BA32FEF00EC571F /* Secret_PlaceUITestsLaunchTests.swift in Sources */,
+				9D36CB572BA32FEF00EC571F /* Secret_PlaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D36CB4A2BA32FEF00EC571F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D36CB372BA32FEC00EC571F /* Secret Place */;
+			targetProxy = 9D36CB492BA32FEF00EC571F /* PBXContainerItemProxy */;
+		};
+		9D36CB542BA32FEF00EC571F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D36CB372BA32FEC00EC571F /* Secret Place */;
+			targetProxy = 9D36CB532BA32FEF00EC571F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D36CB5A2BA32FEF00EC571F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D36CB5B2BA32FEF00EC571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D36CB5D2BA32FEF00EC571F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Secret Place/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D36CB5E2BA32FEF00EC571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Secret Place/Preview Content\"";
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D36CB602BA32FEF00EC571F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Place.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secret Place";
+			};
+			name = Debug;
+		};
+		9D36CB612BA32FEF00EC571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Place.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Secret Place";
+			};
+			name = Release;
+		};
+		9D36CB632BA32FEF00EC571F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-PlaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Secret Place";
+			};
+			name = Debug;
+		};
+		9D36CB642BA32FEF00EC571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UYY2T3CK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pops.Secret-PlaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Secret Place";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D36CB332BA32FEC00EC571F /* Build configuration list for PBXProject "Secret Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D36CB5A2BA32FEF00EC571F /* Debug */,
+				9D36CB5B2BA32FEF00EC571F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D36CB5C2BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D36CB5D2BA32FEF00EC571F /* Debug */,
+				9D36CB5E2BA32FEF00EC571F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D36CB5F2BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret PlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D36CB602BA32FEF00EC571F /* Debug */,
+				9D36CB612BA32FEF00EC571F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D36CB622BA32FEF00EC571F /* Build configuration list for PBXNativeTarget "Secret PlaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D36CB632BA32FEF00EC571F /* Debug */,
+				9D36CB642BA32FEF00EC571F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D36CB302BA32FEC00EC571F /* Project object */;
+}
