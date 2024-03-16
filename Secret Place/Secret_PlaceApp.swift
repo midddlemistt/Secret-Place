@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct Secret_PlaceApp: App {
+    
+    init() {
+        GMSServices.provideAPIKey("AIzaSyDVzrn-ve0Rl4EmFDpmRT0dxmw5NKXZ1UE")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
