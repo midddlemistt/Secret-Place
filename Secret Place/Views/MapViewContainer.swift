@@ -9,11 +9,16 @@ import SwiftUI
 
 struct MapViewContainer: View {
     @StateObject var routeViewModel = RouteViewModel()
+    
 
     var body: some View {
         ZStack {
             MainMapView(viewModel: routeViewModel)
                 .edgesIgnoringSafeArea(.all)
+            
+            if let currentQuest = routeViewModel.currentQuest {
+                questView(for: currentQuest)
+            }
 
             if routeViewModel.showRouteDetails, let selectedRoute = routeViewModel.selectedRoute {
                 RouteDetailView(viewModel: routeViewModel, route: .constant(selectedRoute), onClose: {
@@ -84,10 +89,27 @@ struct MapViewContainer: View {
                 }
             }
     }
+    
+    @ViewBuilder
+    private func questView(for quest: Quest) -> some View {
+        // Проверка типа квеста и создание соответствующей ViewModel
+        if let questionQuest = quest as? QuestionQuest {
+            // Создаем ViewModel для квеста
+            let viewModel = QuestionQuestViewModel(quest: questionQuest)
+            // Передаем ViewModel во вью
+            QuestionQuestView(viewModel: viewModel)
+        }
+        // Добавьте здесь другие условия для разных типов квестов с их ViewModel
+        else {
+            Text("Неподдерживаемый тип квеста")
+        }
+    }
+
+    
 }
 
 
 
-#Preview {
-    MapViewContainer()
-}
+//#Preview {
+//    MapViewContainer()
+//}

@@ -22,7 +22,6 @@
 		9D36CB762BA3343C00EC571F /* QuestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB752BA3343C00EC571F /* QuestDetailView.swift */; };
 		9D36CB782BA3344600EC571F /* RouteCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB772BA3344600EC571F /* RouteCreationView.swift */; };
 		9D36CB7A2BA3344D00EC571F /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB792BA3344D00EC571F /* UserProfileView.swift */; };
-		9D36CB7E2BA3346100EC571F /* QuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB7D2BA3346100EC571F /* QuestViewModel.swift */; };
 		9D36CB802BA3346B00EC571F /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB7F2BA3346B00EC571F /* RouteViewModel.swift */; };
 		9D36CB822BA3347000EC571F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB812BA3347000EC571F /* UserViewModel.swift */; };
 		9D36CB842BA3347700EC571F /* DragonHutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CB832BA3347700EC571F /* DragonHutViewModel.swift */; };
@@ -33,12 +32,13 @@
 		9D36CB8F2BA338DA00EC571F /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = 9D36CB8E2BA338DA00EC571F /* GoogleMapsBase */; };
 		9D36CB912BA338DA00EC571F /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D36CB902BA338DA00EC571F /* GoogleMapsCore */; };
 		9D36CB932BA338DA00EC571F /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = 9D36CB922BA338DA00EC571F /* GoogleMapsM4B */; };
-		9D9CFDD52BA363120025FE7A /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDD42BA363120025FE7A /* POI.swift */; };
-		9D9CFDD72BA363510025FE7A /* POIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDD62BA363510025FE7A /* POIViewModel.swift */; };
+		9D6A97ED2BA9B5D60055E024 /* DragonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A97EC2BA9B5D60055E024 /* DragonView.swift */; };
+		9D7647602BADC4F700AECA1F /* EnergyIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76475F2BADC4F700AECA1F /* EnergyIndicatorView.swift */; };
+		9D7647622BADC50400AECA1F /* LevelIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7647612BADC50400AECA1F /* LevelIndicatorView.swift */; };
+		9D87149E2BB5C0B7007596AF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D87149D2BB5C0B7007596AF /* Alamofire */; };
+		9D8714A02BB5C0B7007596AF /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9D87149F2BB5C0B7007596AF /* AlamofireDynamic */; };
 		9D9CFDD92BA36BE60025FE7A /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDD82BA36BE60025FE7A /* RouteDetailView.swift */; };
 		9D9CFDDB2BA371390025FE7A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDDA2BA371390025FE7A /* SampleData.swift */; };
-		9D9CFDDE2BA3802F0025FE7A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9CFDDD2BA3802F0025FE7A /* Alamofire */; };
-		9D9CFDE02BA3802F0025FE7A /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9D9CFDDF2BA3802F0025FE7A /* AlamofireDynamic */; };
 		9D9CFDE22BA382E20025FE7A /* DirectionsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDE12BA382E20025FE7A /* DirectionsAPI.swift */; };
 		9D9CFDE42BA486A30025FE7A /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDE32BA486A30025FE7A /* MiniMapView.swift */; };
 		9D9CFDE62BA5B1C50025FE7A /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDE52BA5B1C50025FE7A /* MapCoordinator.swift */; };
@@ -48,7 +48,19 @@
 		9D9CFDF02BA62E9E0025FE7A /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDEF2BA62E9E0025FE7A /* UserInputView.swift */; };
 		9D9CFDF22BA630800025FE7A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDF12BA630800025FE7A /* ImagePicker.swift */; };
 		9D9CFDF52BA636CF0025FE7A /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDF42BA636CF0025FE7A /* CustomTextFieldView.swift */; };
-		9D9CFDF72BA636FA0025FE7A /* AgePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9CFDF62BA636FA0025FE7A /* AgePickerView.swift */; };
+		9DC04F1E2BB220A6004C0970 /* QuestionQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F1D2BB220A6004C0970 /* QuestionQuest.swift */; };
+		9DC04F202BB220B8004C0970 /* MiniGameQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F1F2BB220B8004C0970 /* MiniGameQuest.swift */; };
+		9DC04F222BB220C8004C0970 /* FindObjectQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F212BB220C8004C0970 /* FindObjectQuest.swift */; };
+		9DC04F242BB2248A004C0970 /* QuestionQuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F232BB2248A004C0970 /* QuestionQuestView.swift */; };
+		9DC04F262BB224BC004C0970 /* MiniGameQuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F252BB224BC004C0970 /* MiniGameQuestView.swift */; };
+		9DC04F282BB224D7004C0970 /* FindObjectQuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F272BB224D7004C0970 /* FindObjectQuestView.swift */; };
+		9DC04F2A2BB22507004C0970 /* QuestionQuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04F292BB22507004C0970 /* QuestionQuestViewModel.swift */; };
+		9DD55FB92BB5DB26002E22E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DD55FB82BB5DB26002E22E0 /* GoogleService-Info.plist */; };
+		9DD55FBC2BB5DC0D002E22E0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD55FBB2BB5DC0D002E22E0 /* FirebaseAnalytics */; };
+		9DD55FBE2BB5DC0D002E22E0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD55FBD2BB5DC0D002E22E0 /* FirebaseAnalyticsOnDeviceConversion */; };
+		9DD55FC02BB5DC0D002E22E0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD55FBF2BB5DC0D002E22E0 /* FirebaseAnalyticsSwift */; };
+		9DD55FC22BB5DC0D002E22E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD55FC12BB5DC0D002E22E0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		9DD55FC42BB5DC0D002E22E0 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD55FC32BB5DC0D002E22E0 /* FirebaseAppCheck */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,15 +99,15 @@
 		9D36CB752BA3343C00EC571F /* QuestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetailView.swift; sourceTree = "<group>"; };
 		9D36CB772BA3344600EC571F /* RouteCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCreationView.swift; sourceTree = "<group>"; };
 		9D36CB792BA3344D00EC571F /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
-		9D36CB7D2BA3346100EC571F /* QuestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewModel.swift; sourceTree = "<group>"; };
 		9D36CB7F2BA3346B00EC571F /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
 		9D36CB812BA3347000EC571F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		9D36CB832BA3347700EC571F /* DragonHutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonHutViewModel.swift; sourceTree = "<group>"; };
 		9D36CB852BA3348100EC571F /* GoogleMapsIntegrationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsIntegrationHelper.swift; sourceTree = "<group>"; };
 		9D36CB872BA3348800EC571F /* VoiceAssistantHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantHelper.swift; sourceTree = "<group>"; };
 		9D36CB892BA3349100EC571F /* SocialMediaIntegrationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaIntegrationHelper.swift; sourceTree = "<group>"; };
-		9D9CFDD42BA363120025FE7A /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
-		9D9CFDD62BA363510025FE7A /* POIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewModel.swift; sourceTree = "<group>"; };
+		9D6A97EC2BA9B5D60055E024 /* DragonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonView.swift; sourceTree = "<group>"; };
+		9D76475F2BADC4F700AECA1F /* EnergyIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyIndicatorView.swift; sourceTree = "<group>"; };
+		9D7647612BADC50400AECA1F /* LevelIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelIndicatorView.swift; sourceTree = "<group>"; };
 		9D9CFDD82BA36BE60025FE7A /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 		9D9CFDDA2BA371390025FE7A /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		9D9CFDE12BA382E20025FE7A /* DirectionsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsAPI.swift; sourceTree = "<group>"; };
@@ -108,7 +120,14 @@
 		9D9CFDF12BA630800025FE7A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9D9CFDF32BA631650025FE7A /* Secret-Place-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Secret-Place-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9D9CFDF42BA636CF0025FE7A /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
-		9D9CFDF62BA636FA0025FE7A /* AgePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePickerView.swift; sourceTree = "<group>"; };
+		9DC04F1D2BB220A6004C0970 /* QuestionQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionQuest.swift; sourceTree = "<group>"; };
+		9DC04F1F2BB220B8004C0970 /* MiniGameQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameQuest.swift; sourceTree = "<group>"; };
+		9DC04F212BB220C8004C0970 /* FindObjectQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindObjectQuest.swift; sourceTree = "<group>"; };
+		9DC04F232BB2248A004C0970 /* QuestionQuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionQuestView.swift; sourceTree = "<group>"; };
+		9DC04F252BB224BC004C0970 /* MiniGameQuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameQuestView.swift; sourceTree = "<group>"; };
+		9DC04F272BB224D7004C0970 /* FindObjectQuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindObjectQuestView.swift; sourceTree = "<group>"; };
+		9DC04F292BB22507004C0970 /* QuestionQuestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionQuestViewModel.swift; sourceTree = "<group>"; };
+		9DD55FB82BB5DB26002E22E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +135,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D9CFDDE2BA3802F0025FE7A /* Alamofire in Frameworks */,
-				9D9CFDE02BA3802F0025FE7A /* AlamofireDynamic in Frameworks */,
+				9DD55FC02BB5DC0D002E22E0 /* FirebaseAnalyticsSwift in Frameworks */,
+				9DD55FC22BB5DC0D002E22E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				9DD55FBC2BB5DC0D002E22E0 /* FirebaseAnalytics in Frameworks */,
+				9D87149E2BB5C0B7007596AF /* Alamofire in Frameworks */,
+				9D8714A02BB5C0B7007596AF /* AlamofireDynamic in Frameworks */,
 				9D36CB8D2BA338DA00EC571F /* GoogleMaps in Frameworks */,
 				9D36CB912BA338DA00EC571F /* GoogleMapsCore in Frameworks */,
 				9D36CB932BA338DA00EC571F /* GoogleMapsM4B in Frameworks */,
 				9D36CB8F2BA338DA00EC571F /* GoogleMapsBase in Frameworks */,
+				9DD55FBE2BB5DC0D002E22E0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				9DD55FC42BB5DC0D002E22E0 /* FirebaseAppCheck in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +189,7 @@
 		9D36CB3A2BA32FEC00EC571F /* Secret Place */ = {
 			isa = PBXGroup;
 			children = (
+				9DD55FB82BB5DB26002E22E0 /* GoogleService-Info.plist */,
 				9D9CFDF32BA631650025FE7A /* Secret-Place-Info.plist */,
 				9D36CB3B2BA32FEC00EC571F /* Secret_PlaceApp.swift */,
 				9D36CB652BA3335B00EC571F /* Models */,
@@ -205,8 +230,10 @@
 		9D36CB652BA3335B00EC571F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9D9CFDD42BA363120025FE7A /* POI.swift */,
 				9D36CB6B2BA333FA00EC571F /* Quest.swift */,
+				9DC04F1D2BB220A6004C0970 /* QuestionQuest.swift */,
+				9DC04F1F2BB220B8004C0970 /* MiniGameQuest.swift */,
+				9DC04F212BB220C8004C0970 /* FindObjectQuest.swift */,
 				9D36CB6D2BA3340600EC571F /* Route.swift */,
 				9D36CB6F2BA3340B00EC571F /* User.swift */,
 				9D36CB712BA3341900EC571F /* DragonHut.swift */,
@@ -225,11 +252,16 @@
 				9D36CB772BA3344600EC571F /* RouteCreationView.swift */,
 				9D9CFDD82BA36BE60025FE7A /* RouteDetailView.swift */,
 				9D9CFDE32BA486A30025FE7A /* MiniMapView.swift */,
+				9DC04F232BB2248A004C0970 /* QuestionQuestView.swift */,
+				9DC04F252BB224BC004C0970 /* MiniGameQuestView.swift */,
+				9DC04F272BB224D7004C0970 /* FindObjectQuestView.swift */,
 				9D36CB792BA3344D00EC571F /* UserProfileView.swift */,
+				9D76475F2BADC4F700AECA1F /* EnergyIndicatorView.swift */,
+				9D7647612BADC50400AECA1F /* LevelIndicatorView.swift */,
 				9D9CFDF42BA636CF0025FE7A /* CustomTextFieldView.swift */,
-				9D9CFDF62BA636FA0025FE7A /* AgePickerView.swift */,
 				9D9CFDEF2BA62E9E0025FE7A /* UserInputView.swift */,
 				9D9CFDE72BA5D8640025FE7A /* DragonHutView.swift */,
+				9D6A97EC2BA9B5D60055E024 /* DragonView.swift */,
 				9D9CFDED2BA5DEF70025FE7A /* CustomTabBarView.swift */,
 			);
 			path = Views;
@@ -238,11 +270,10 @@
 		9D36CB672BA3337B00EC571F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				9D36CB7D2BA3346100EC571F /* QuestViewModel.swift */,
 				9D36CB7F2BA3346B00EC571F /* RouteViewModel.swift */,
+				9DC04F292BB22507004C0970 /* QuestionQuestViewModel.swift */,
 				9D36CB812BA3347000EC571F /* UserViewModel.swift */,
 				9D36CB832BA3347700EC571F /* DragonHutViewModel.swift */,
-				9D9CFDD62BA363510025FE7A /* POIViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -289,8 +320,13 @@
 				9D36CB8E2BA338DA00EC571F /* GoogleMapsBase */,
 				9D36CB902BA338DA00EC571F /* GoogleMapsCore */,
 				9D36CB922BA338DA00EC571F /* GoogleMapsM4B */,
-				9D9CFDDD2BA3802F0025FE7A /* Alamofire */,
-				9D9CFDDF2BA3802F0025FE7A /* AlamofireDynamic */,
+				9D87149D2BB5C0B7007596AF /* Alamofire */,
+				9D87149F2BB5C0B7007596AF /* AlamofireDynamic */,
+				9DD55FBB2BB5DC0D002E22E0 /* FirebaseAnalytics */,
+				9DD55FBD2BB5DC0D002E22E0 /* FirebaseAnalyticsOnDeviceConversion */,
+				9DD55FBF2BB5DC0D002E22E0 /* FirebaseAnalyticsSwift */,
+				9DD55FC12BB5DC0D002E22E0 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				9DD55FC32BB5DC0D002E22E0 /* FirebaseAppCheck */,
 			);
 			productName = "Secret Place";
 			productReference = 9D36CB382BA32FEC00EC571F /* Secret Place.app */;
@@ -366,7 +402,8 @@
 			mainGroup = 9D36CB2F2BA32FEC00EC571F;
 			packageReferences = (
 				9D36CB8B2BA338DA00EC571F /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
-				9D9CFDDC2BA3802F0025FE7A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9D87149C2BB5C0B7007596AF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9D36CB392BA32FEC00EC571F /* Products */;
 			projectDirPath = "";
@@ -386,6 +423,7 @@
 			files = (
 				9D36CB432BA32FEE00EC571F /* Preview Assets.xcassets in Resources */,
 				9D36CB402BA32FEE00EC571F /* Assets.xcassets in Resources */,
+				9DD55FB92BB5DB26002E22E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,10 +448,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D9CFDD52BA363120025FE7A /* POI.swift in Sources */,
+				9DC04F282BB224D7004C0970 /* FindObjectQuestView.swift in Sources */,
+				9DC04F222BB220C8004C0970 /* FindObjectQuest.swift in Sources */,
 				9D9CFDD92BA36BE60025FE7A /* RouteDetailView.swift in Sources */,
 				9D36CB762BA3343C00EC571F /* QuestDetailView.swift in Sources */,
 				9D36CB3E2BA32FEC00EC571F /* ContentView.swift in Sources */,
+				9D7647622BADC50400AECA1F /* LevelIndicatorView.swift in Sources */,
+				9D6A97ED2BA9B5D60055E024 /* DragonView.swift in Sources */,
 				9D36CB742BA3343200EC571F /* MainMapView.swift in Sources */,
 				9D36CB842BA3347700EC571F /* DragonHutViewModel.swift in Sources */,
 				9D36CB6E2BA3340600EC571F /* Route.swift in Sources */,
@@ -421,26 +462,29 @@
 				9D36CB822BA3347000EC571F /* UserViewModel.swift in Sources */,
 				9D9CFDEE2BA5DEF70025FE7A /* CustomTabBarView.swift in Sources */,
 				9D36CB782BA3344600EC571F /* RouteCreationView.swift in Sources */,
+				9DC04F242BB2248A004C0970 /* QuestionQuestView.swift in Sources */,
 				9D36CB8A2BA3349100EC571F /* SocialMediaIntegrationHelper.swift in Sources */,
 				9D36CB7A2BA3344D00EC571F /* UserProfileView.swift in Sources */,
-				9D9CFDF72BA636FA0025FE7A /* AgePickerView.swift in Sources */,
 				9D36CB6C2BA333FA00EC571F /* Quest.swift in Sources */,
 				9D36CB862BA3348100EC571F /* GoogleMapsIntegrationHelper.swift in Sources */,
 				9D36CB702BA3340B00EC571F /* User.swift in Sources */,
 				9D36CB882BA3348800EC571F /* VoiceAssistantHelper.swift in Sources */,
 				9D9CFDF22BA630800025FE7A /* ImagePicker.swift in Sources */,
+				9DC04F2A2BB22507004C0970 /* QuestionQuestViewModel.swift in Sources */,
 				9D9CFDE82BA5D8640025FE7A /* DragonHutView.swift in Sources */,
-				9D36CB7E2BA3346100EC571F /* QuestViewModel.swift in Sources */,
+				9DC04F262BB224BC004C0970 /* MiniGameQuestView.swift in Sources */,
 				9D36CB722BA3341900EC571F /* DragonHut.swift in Sources */,
 				9D9CFDE42BA486A30025FE7A /* MiniMapView.swift in Sources */,
+				9D7647602BADC4F700AECA1F /* EnergyIndicatorView.swift in Sources */,
+				9DC04F1E2BB220A6004C0970 /* QuestionQuest.swift in Sources */,
 				9D9CFDE22BA382E20025FE7A /* DirectionsAPI.swift in Sources */,
 				9D9CFDF52BA636CF0025FE7A /* CustomTextFieldView.swift in Sources */,
 				9D9CFDEC2BA5D8B90025FE7A /* MapViewContainer.swift in Sources */,
-				9D9CFDD72BA363510025FE7A /* POIViewModel.swift in Sources */,
 				9D9CFDF02BA62E9E0025FE7A /* UserInputView.swift in Sources */,
 				9D9CFDDB2BA371390025FE7A /* SampleData.swift in Sources */,
 				9D36CB802BA3346B00EC571F /* RouteViewModel.swift in Sources */,
 				9D36CB3C2BA32FEC00EC571F /* Secret_PlaceApp.swift in Sources */,
+				9DC04F202BB220B8004C0970 /* MiniGameQuest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,12 +834,20 @@
 				minimumVersion = 8.4.0;
 			};
 		};
-		9D9CFDDC2BA3802F0025FE7A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		9D87149C2BB5C0B7007596AF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.9.0;
+			};
+		};
+		9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -821,15 +873,40 @@
 			package = 9D36CB8B2BA338DA00EC571F /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
 			productName = GoogleMapsM4B;
 		};
-		9D9CFDDD2BA3802F0025FE7A /* Alamofire */ = {
+		9D87149D2BB5C0B7007596AF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D9CFDDC2BA3802F0025FE7A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 9D87149C2BB5C0B7007596AF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		9D9CFDDF2BA3802F0025FE7A /* AlamofireDynamic */ = {
+		9D87149F2BB5C0B7007596AF /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D9CFDDC2BA3802F0025FE7A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 9D87149C2BB5C0B7007596AF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
+		};
+		9DD55FBB2BB5DC0D002E22E0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9DD55FBD2BB5DC0D002E22E0 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		9DD55FBF2BB5DC0D002E22E0 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		9DD55FC12BB5DC0D002E22E0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		9DD55FC32BB5DC0D002E22E0 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DD55FBA2BB5DC0C002E22E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

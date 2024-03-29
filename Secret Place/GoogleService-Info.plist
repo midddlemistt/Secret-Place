@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDVzrn-ve0Rl4EmFDpmRT0dxmw5NKXZ1UE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>714312140112</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pops.Secret-Place</string>
+	<key>PROJECT_ID</key>
+	<string>secret-place-417214</string>
+	<key>STORAGE_BUCKET</key>
+	<string>secret-place-417214.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:714312140112:ios:21592ec3d1e22d2647d855</string>
+</dict>
+</plist>

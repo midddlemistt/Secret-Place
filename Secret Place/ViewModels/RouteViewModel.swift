@@ -9,6 +9,7 @@ import Combine
 import CoreLocation
 import GoogleMaps
 
+
 class RouteViewModel: ObservableObject {
     @Published var routes: [Route] = [SampleData.sampleRoute] // Пример данных маршрута
     @Published var selectedRoute: Route? // Текущий выбранный маршрут
@@ -16,6 +17,8 @@ class RouteViewModel: ObservableObject {
     @Published var routeStarted = false // Начат ли маршрут
     @Published var routeCompleted = false
     @Published var currentPointIndex: Int? = nil
+    @Published var currentQuest: Quest? = nil
+
 
     func startRoute() {
         routeStarted = true
@@ -45,16 +48,33 @@ class RouteViewModel: ObservableObject {
     }
     
     func reachNextPoint() {
-            guard let route = selectedRoute, let index = currentPointIndex else { return }
-            
-            if index < route.points.count - 1 {
-                // Есть еще точки в маршруте
-                currentPointIndex! += 1
-            } else {
-                // Последняя точка маршрута достигнута, завершаем маршрут
-                endRoute()
-            }
+        guard let route = selectedRoute, let index = currentPointIndex, route.points.indices.contains(index) else { return }
+        
+        if let quest = route.points[index].quest {
+            setCurrentQuest(quest) // Установка текущего квеста и подписка на его завершение
         }
+        
+        if index < route.points.count - 1 {
+            currentPointIndex! += 1
+        } else {
+            endRoute()
+        }
+    }
+
+    
+    
+    func setCurrentQuest(_ quest: Quest) {
+        let questViewModel = QuestionQuestViewModel(quest: quest as! QuestionQuest)
+        questViewModel.onCompletion = { [weak self] completed in
+            guard completed else { return }
+            self?.reachNextPoint() 
+        }
+        self.currentQuest = quest
+    }
+
+
+
+
     
     func setupMarkers(in mapView: GMSMapView) {
         mapView.clear() // Очистка карты от предыдущих маркеров

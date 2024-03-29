@@ -7,12 +7,15 @@
 
 import SwiftUI
 import GoogleMaps
+import Firebase
 
 @main
 struct Secret_PlaceApp: App {
     
     init() {
         GMSServices.provideAPIKey("AIzaSyDVzrn-ve0Rl4EmFDpmRT0dxmw5NKXZ1UE")
+        
+        FirebaseApp.configure()
     }
     
     var body: some Scene {

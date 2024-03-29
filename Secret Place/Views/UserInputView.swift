@@ -11,12 +11,13 @@ struct UserInputView: View {
     @ObservedObject var viewModel: UserViewModel
     @Binding var profileImage: UIImage?
     @State private var showingImagePicker = false
+    @Binding var showingInputView: Bool
     @State private var firstName = ""
     @State private var lastName = ""
-    @State private var age = ""
-
+    
     var body: some View {
         VStack(spacing: 20) {
+            // Кнопка для выбора изображения профиля
             Button(action: {
                 showingImagePicker = true
             }) {
@@ -37,31 +38,32 @@ struct UserInputView: View {
             .sheet(isPresented: $showingImagePicker) {
                 ImagePicker(selectedImage: $profileImage)
             }
-
+            
             TextField("Имя", text: $firstName)
-                .keyboardType(.default)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-
+            
             TextField("Фамилия", text: $lastName)
-                .keyboardType(.default)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            TextField("Возраст", text: $age)
-                .keyboardType(.numberPad)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-
+            
             Button("Сохранить") {
-                let ageInt = Int(age) ?? 0
-                viewModel.updateUser(firstName: firstName, lastName: lastName, age: ageInt, profileImage: profileImage)
+                viewModel.updateUser(firstName: firstName, lastName: lastName, age: viewModel.user?.age ?? 0, profileImage: profileImage)
+                showingInputView = false // Закрываем вью после сохранения
             }
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            
         }
         .padding()
+        .onAppear {
+            // При появлении вью, заполнить поля текущими данными пользователя
+            self.firstName = viewModel.user?.firstName ?? ""
+            self.lastName = viewModel.user?.lastName ?? ""
+        }
     }
 }
+
 
 
 

@@ -99,7 +99,7 @@ struct RouteDetailView: View {
 
 
 
-#Preview {
-    RouteDetailView(viewModel: RouteViewModel(), route: .constant(SampleData.sampleRoute), onClose: {}, onStartRoute: {})
-        .previewLayout(.sizeThatFits)
-}
+//#Preview {
+//    RouteDetailView(viewModel: RouteViewModel(), route: .constant(SampleData.sampleRoute), onClose: {}, onStartRoute: {})
+//        .previewLayout(.sizeThatFits)
+//}

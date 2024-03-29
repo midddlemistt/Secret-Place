@@ -18,46 +18,57 @@ struct SampleData {
                 coordinate: CLLocationCoordinate2D(latitude: 53.9006, longitude: 27.5590),
                 title: "Площадь Свободы",
                 description: "Сердце города и начало вашего пути.",
-                quest: Quest(
+                quest: QuestionQuest(
                     id: UUID(),
                     title: "Тайна площади",
-                    description: "Найдите символ свободы, который виден только отважным."
+                    description: "Какой исторический символ находится в центре Площади Свободы?",
+                    question: "Что символизирует статуя в центре площади?",
+                    answers: ["Свободу", "Единство", "Мир", "Победу"],
+                    correctAnswer: "Свободу"
                 )
             ),
             Route.RoutePoint(
                 coordinate: CLLocationCoordinate2D(latitude: 53.8986, longitude: 27.5623),
                 title: "Городская Ратуша",
                 description: "Историческое здание с богатой историей.",
-                quest: Quest(
+                quest: QuestionQuest(
                     id: UUID(),
                     title: "Загадка Ратуши",
-                    description: "Раскройте тайны прошлого, найдя скрытый послание мэра."
+                    description: "В каком веке была построена Городская Ратуша?",
+                    question: "Век постройки Городской Ратуши?",
+                    answers: ["XVI век", "XVII век", "XVIII век", "XIX век"],
+                    correctAnswer: "XVII век"
                 )
             ),
             Route.RoutePoint(
                 coordinate: CLLocationCoordinate2D(latitude: 53.9025, longitude: 27.5618),
                 title: "Оперный театр",
                 description: "Один из красивейших театров Европы.",
-                quest: Quest(
+                quest: QuestionQuest(
                     id: UUID(),
                     title: "Ария призрака",
-                    description: "Найдите записку, оставленную последним оперным призраком."
+                    description: "Кто является автором знаменитой оперы, исполняемой в этом театре?",
+                    question: "Автор оперы 'Кармен'",
+                    answers: ["Джузеппе Верди", "Вольфганг Амадей Моцарт", "Джордж Бизе", "Петр Чайковский"],
+                    correctAnswer: "Джордж Бизе"
                 )
             ),
             Route.RoutePoint(
                 coordinate: CLLocationCoordinate2D(latitude: 53.9061, longitude: 27.5543),
                 title: "Остров Слез",
                 description: "Место, полное загадок и старых легенд.",
-                quest: Quest(
+                quest: QuestionQuest(
                     id: UUID(),
                     title: "Легенда острова",
-                    description: "Отыщите древний символ, укрытый среди исторических руин."
+                    description: "По легенде, кого можно встретить на Острове Слез в полночь?",
+                    question: "Кого можно встретить на Острове Слез?",
+                    answers: ["Призрака", "Фею", "Дракона", "Русалку"],
+                    correctAnswer: "Призрака"
                 )
             )
         ]
     )
-
-    // Дополнительные примеры данных по мере необходимости
 }
+
 
 

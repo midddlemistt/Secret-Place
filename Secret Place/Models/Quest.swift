@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Quest {
-    let id: UUID
-    let title: String
-    let description: String
-    // Другие возможные поля, такие как вопросы для квеста, задачи, подсказки и т.д.
+protocol Quest {
+    var id: UUID { get }
+    var title: String { get }
+    var description: String { get }
+    func performQuest()
 }
+

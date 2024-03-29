@@ -11,61 +11,76 @@ struct UserProfileView: View {
     @StateObject var viewModel = UserViewModel()
     @State private var showingInputView = false
     @State private var profileImage: UIImage? = UIImage(systemName: "person.crop.circle")
-
+    
     var body: some View {
-        VStack {
-            Spacer()
+            VStack(spacing: 20) {
+                if let user = viewModel.user {
+                    // Аватар пользователя
+                    Image(uiImage: user.profileImage ?? UIImage(systemName: "person.crop.circle")!)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 150)
+                        .clipShape(Circle())
+                        .shadow(radius: 5)
+                        .padding(.top, 20)
 
-            VStack(spacing: 16) {
-                // Изображение профиля
-                Image(uiImage: profileImage ?? UIImage())
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 120, height: 120)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.orange, lineWidth: 4))
-                    .shadow(radius: 10)
-                    .padding(.top)
+                    // Текстовая информация
+                    VStack(spacing: 10) {
+                        Text("\(user.firstName) \(user.lastName)")
+                            .font(.title2)
+                            .fontWeight(.bold)
 
-                // Информация о пользователе
-                Text(viewModel.user?.firstName ?? "Имя")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(.black)
+                        Text("Возраст: \(user.age)")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
 
-                Text(viewModel.user?.lastName ?? "Фамилия")
-                    .font(.title3)
-                    .foregroundColor(.black)
+                        Text("Ранг: \(user.rank)")
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 4)
+                            .frame(minWidth: 100)
+                            .background(Color.green.opacity(0.2))
+                            .clipShape(Capsule())
+                        
+                        // Монеты пользователя
+                        Text("Монеты: \(user.coins)")
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 4)
+                            .frame(minWidth: 100)
+                            .background(Color.yellow.opacity(0.2))
+                            .clipShape(Capsule())
+                    }
+                    .padding()
 
-                Text("Возраст: \(viewModel.user?.age ?? 0) лет")
-                    .font(.body)
-                    .foregroundColor(.gray)
-                
-                Button(action: {
-                    showingInputView = true
-                }) {
-                    Text("Редактировать")
-                        .fontWeight(.bold)
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing))
-                        .cornerRadius(20)
+                    // Индикаторы уровня и энергии
+                    HStack(spacing: 40) {
+                        LevelIndicatorView(level: user.level)
+                        EnergyIndicatorView(energy: user.energy, maxValue: 20)
+                    }
+                    .padding(.top, 20)
+
+                    // Кнопка редактирования профиля
+                    Button(action: { showingInputView = true }) {
+                        Text("Редактировать профиль")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                            .padding(.horizontal)
+                    }
+                    .sheet(isPresented: $showingInputView) {
+                        UserInputView(viewModel: viewModel, profileImage: $profileImage, showingInputView: $showingInputView)
+                    }
+
+                    Spacer()
                 }
-                .padding(.horizontal)
             }
-            .background(Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 25))
-            .shadow(radius: 5)
-            .padding()
-
-            Spacer()
-        }
-        .background(Color(.systemGray6)) // Установите здесь фон всего экрана, чтобы соответствовать вашему стилю
-        .sheet(isPresented: $showingInputView) {
-            UserInputView(viewModel: viewModel, profileImage: $profileImage)
+            .background(Color(.systemGray6))
         }
     }
+
+#Preview {
+    UserProfileView()
 }
 
 

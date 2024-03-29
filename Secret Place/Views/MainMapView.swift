@@ -38,6 +38,6 @@ struct MainMapView: UIViewRepresentable {
     
 }
 
-#Preview {
-    MainMapView(viewModel: RouteViewModel())
-}
+//#Preview {
+//    MainMapView(viewModel: RouteViewModel())
+//}
